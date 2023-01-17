@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="converter.css">
+    </head>
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+    <body>
+        <div class="top">
+            <h1 id="title">Metric/Imperial Unit Conversion</h1>
+                <input id="box" type="number" placeholder="" oninput="lengthCoverter(this.value)" onchange="lengthConverter(this.value)"></input>
+            <button type="button" id="submit">Convert</button>
+        </div>
+
+        <div class ="firstConverter">
+            <h1 id="firstMetric">Length (Inch/Centimeter)</h1>
+            <h2 id="firstResult"></h2>
+        </div>
+
+        <div class="secondConverter">
+            <h1 id="secondMetric">Mass (Pound/Kilogram)</h1>
+            <h2 id="secondResult"></h2>
+        </div>
+
+        <div class ="thirdConverter">
+            <h1 id="thirdMetric">Speed (Mile/Kilometer)</h1>
+            <h2 id="thirdResult"></h2>
+        </div>
+
+        <script src="converter.js"></script>
+    </body>
+</html>
+
